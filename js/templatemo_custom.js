@@ -95,7 +95,7 @@ jQuery(document).ready(function($){
 function loadScript() {
   var script = document.createElement('script');
   script.type = 'text/javascript';
-  script.src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyC2Rj28-wpkskRIU5oYGFd0P7sG29CRnlY=&&callback=initMap";
+  script.src = "";
 	  
   document.body.appendChild(script);
 }
