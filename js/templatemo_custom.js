@@ -95,14 +95,14 @@ jQuery(document).ready(function($){
 function loadScript() {
   var script = document.createElement('script');
   script.type = 'text/javascript';
-  script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&' +
-      'callback=initialize';
+  script.src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyC2Rj28-wpkskRIU5oYGFd0P7sG29CRnlY=&&callback=initMap";
+	  
   document.body.appendChild(script);
 }
 
-function initialize() {
+function initMap() {
     var mapOptions = {
-      zoom: 12,
+      zoom: 20,
       center: new google.maps.LatLng(30.5871918,-96.2874530)
     };
     var map = new google.maps.Map(document.getElementById('templatemo_map'),  mapOptions);
